@@ -60,22 +60,22 @@
           <div class="row collapse navbar-collapse" id="nav-principal">
             <ul class="navbar-nav justify-content-end">
               <li class="nav-item">
-                <a href="#peixesrio" class="nav-link align-content-end hrooz"
+                <a href="#inicio" class="nav-link align-content-end hrooz"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a href="#peixesmar" class="nav-link hrooz">sobre</a>
+                <a href="#sobre" class="nav-link hrooz">Sobre</a>
               </li>
               <li class="nav-item">
-                <a href="#frutosmar" class="nav-link hrooz">Habilidades</a>
+                <a href="#habilidade" class="nav-link hrooz">Habilidades</a>
               </li>
               <li class="nav-item">
-                <a href="#frutosmar" class="nav-link hrooz">projetos</a>
+                <a href="#projetos" class="nav-link hrooz">Projetos</a>
               </li>
 
               <li class="nav-item">
-                <a href="#sobre" class="nav-link hrooz">Contato</a>
+                <a href="#contato" class="nav-link hrooz">Contato</a>
               </li>
             </ul>
           </div>
@@ -84,7 +84,7 @@
     </header>
     <!--/fim Cabecalho -->
 
-    <section>
+    <section id="#inicio">
       <div class="back1">
         <div class="primeira">
           <div class="container">
@@ -120,7 +120,7 @@
         </div>
       </div>
 
-      <div class="back2">
+      <div class="back2" id="#sobre">
         <h1 class="text-center context">Quem sou eu_</h1>
         <div class="segunda">
           <div class="apresentacao">
@@ -149,7 +149,7 @@
         </div>
       </div>
 
-      <section>
+      <section id="#habilidade">
         <h1 class="text-center context">Habilidades</h1>
         <div
           class="terceira back3"
@@ -250,6 +250,17 @@
                           ></div>
                         </div>
                       </div>
+                      <div class="skill">
+                        <div class="skillfont">
+                          Bootstrap<span class="skillfont2"> 80%</span>
+                        </div>
+                        <div class="progress-bar">
+                          <div
+                            class="progress text-end"
+                            style="width: 80%"
+                          ></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -259,24 +270,24 @@
         </div>
       </section>
 
-      <section class="back4">
+      <section id="#projetos">
         <h1 class="text-center context">Projetos</h1>
         <div class="projetos">
           <div class="container" style="height: 100%">
             <div class="row justify-content-center">
               <div
+                class="d-flex justify-content-center align-content-end mt-5"
+                style="background-color: #1d7954"
+              >
+                <p>EM DESENVOLVIMENTO</p>
+              </div>
+              <div
                 id="0"
                 class="col-md-3 bloco2"
                 style="cursor: pointer; background-image: url(img/Capturar.PNG)"
                 onclick="redirecionar()"
-              >
-                <div
-                  class="d-flex justify-content-center align-content-end mt-5"
-                  style="background-color: #1d7954"
-                >
-                  <p>EM DESENVOLVIMENTO</p>
-                </div>
-              </div>
+                onMouseover="verifica()"
+              ></div>
               <div
                 id="1"
                 class="col-md-3 bloco2"
@@ -289,9 +300,7 @@
                 <div
                   class="d-flex justify-content-center align-content-end mt-5"
                   style="background-color: #1d7954"
-                >
-                  <p>Chalenge Frontend Mentor</p>
-                </div>
+                ></div>
               </div>
 
               <div
@@ -303,9 +312,7 @@
                 <div
                   class="d-flex justify-content-center align-content-end mt-5"
                   style="background-color: #1d7954"
-                >
-                  <p>EM DEPLOY</p>
-                </div>
+                ></div>
               </div>
 
               <div
@@ -320,25 +327,96 @@
                 <div
                   class="d-flex justify-content-center align-content-end mt-5"
                   style="background-color: #1d7954"
-                >
-                  <p>EM DESENVOLVIMENTO</p>
-                </div>
+                ></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <h1 class="text-center context">Habilidades</h1>
-      <section class="back5">
+      <section id="#contato" style="background-color: #f5f5f5">
+        <h1 class="text-center context">Contato</h1>
         <div class="quinta">
           <div class="container">
-            <div class="row"></div>
+            <div
+              class="row"
+              style="
+                background-color: #e0e0e0;
+                height: 25em;
+                border-radius: 10px;
+              "
+            >
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-md-12 d-flex justify-content-center align-content-center p-1"
+                    style="
+                      color: #000000;
+                      text-align: center;
+                      justify-content: center;
+                    "
+                  >
+                    <div
+                      class="col-md-4 mt-5 mb-5 p-1 m-1"
+                      style="color: #000000; font-size: 1em"
+                    >
+                      <i
+                        class="fa-brands fa-whatsapp"
+                        style="color: #0c0c0c; font-size: 32px"
+                      ></i>
+                      <hr />
+
+                      41 9 8420 4961
+                    </div>
+                    <div
+                      class="col-md-4 mt-5 mb-5 p-1 m-1"
+                      style="color: #000000; font-size: 1em"
+                    >
+                      <i
+                        class="fa-solid fa-location-dot"
+                        style="color: #0c0c0c; font-size: 32px"
+                      ></i>
+                      <hr />
+
+                      Curitiba-Pr
+                    </div>
+                    <div
+                      class="col-md-4 mt-5 mb-5 p-1 m-1"
+                      style="color: #000000; font-size: 1em"
+                    >
+                      <i
+                        class="fa-regular fa-envelope"
+                        style="color: #0c0c0c; font-size: 32px"
+                      ></i>
+                      <hr />
+
+                      contatoivandev@gmail.com
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-12 d-flex justify-content-center align-content-center"
+                style="color: #000000"
+              >
+                <div class="container d-flex justify-content-center">
+                  <div class="me-2 mt-4">
+                    <i class="fa-brands fa-github iconesRef"></i>
+                  </div>
+                  <div class="ms-2 mt-4">
+                    <i class="fa-brands fa-linkedin iconesRef"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </section>
-    <script type="text/javascript" src="/js/app.js" defer></script>
+    <footer>
+      <p>© 2023 Todos os direitos reservados. Ivan Dias</p>
+    </footer>
+    <script type="text/javascript" src="js/app.js" defer></script>
   </body>
 
   <script

@@ -13,6 +13,7 @@ nav {
 
 .context {
   color: #1d7931;
+  font-size: 28px;
 }
 .context:hover {
   color: #977e2a;
@@ -38,7 +39,8 @@ span:hover {
 }
 
 .hrooz {
-  color: #1d7931;
+  color: #f5f5f5;
+  font-size: 22px;
 }
 
 .hrooz:hover {
@@ -187,7 +189,11 @@ span:hover {
 }
 
 .projetos {
-  height: 40em;
+  min-height: 40em;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blocs {
@@ -195,7 +201,7 @@ span:hover {
 }
 
 .quinta {
-  height: 40em;
+  min-height: 30em;
 }
 
 .texto-habilidade {
@@ -264,13 +270,16 @@ span:hover {
   min-height: 18em;
   transition: 0.3s ease-in-out;
 }
-.bloco2:hover {
+
+.bloco3 {
+  filter: brightness(2pc);
+}
+.bloco3:hover {
   background-color: #1d7931;
   filter: blur(0.2px);
   background-color: #121212;
-  width: 18.5em;
-  height: 18.5em;
-  filter: brightness(2pc);
+  width: 20em;
+  height: 20em;
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -300,4 +309,16 @@ span:hover {
   .apresentacao2 {
     padding: 4em 1em 0 1em;
   }
+}
+.content {
+  min-height: calc(100vh - 80px);
+  /* Substitua 80px pela altura do footer, caso este seja fixo */
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }

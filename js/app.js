@@ -33,6 +33,25 @@ function identifica(event) {
   }
 }
 
+function verifica() {
+  let width = window.innerWidth;
+  console.log(width);
+  let height = window.innerHeight;
+  if (width > 1200) {
+    let identidade = document.querySelectorAll(".bloco2");
+    for (i = 0; i < identidade.length; i++) {
+      identidade[i].addEventListener("mouseover", aumenta);
+    }
+  }
+}
+function aumenta(event) {
+  event.target.classList.add("bloco3");
+}
+
+window.addEventListener("resize", recarregarPagina);
+function recarregarPagina() {
+  window.location.reload();
+}
 //===============================================================================
 var marginTop = 0; // variável para armazenar o estado atual
 
