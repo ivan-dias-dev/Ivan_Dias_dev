@@ -76,7 +76,7 @@ span:hover {
 
 .nome {
   color: #f3f3f3;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-left: 1em;
   font-size: 48px;
 }
@@ -124,10 +124,10 @@ span:hover {
   border-radius: 10px;
   font-size: 22px;
 }
-.card-text {
-  color: #707070;
-  font-weight: 500;
-  text-align: center;
+
+.ellipsis-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .apresentacao2 {
@@ -137,6 +137,13 @@ span:hover {
   padding: 1em;
   border-radius: 10px;
   font-size: 20px;
+}
+.card-text {
+  color: #707070;
+  font-weight: 500;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
 }
 .skils {
   background-color: #313131;
@@ -245,11 +252,38 @@ span:hover {
   height: 18em;
   margin: 1em;
 }
+.bloco2 {
+  background-color: #1d7931;
+  width: 18em;
+  height: 18em;
+  margin: 1em 1em 1em 1em;
+  padding: 1em;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 18em;
+  transition: 0.3s ease-in-out;
+}
+.bloco2:hover {
+  background-color: #1d7931;
+  filter: blur(0.2px);
+  background-color: #121212;
+  width: 18.5em;
+  height: 18.5em;
+  filter: brightness(2pc);
+}
+
 @media (min-width: 0) and (max-width: 767px) {
   .bloco {
     width: 80%;
     height: 20em;
     margin: 1em;
+  }
+  .bloco2 {
+    background-color: #1d7931;
+    width: 80%;
+    height: 20em;
+    margin: 0 1em 1em 1em;
   }
 }
 
@@ -257,7 +291,13 @@ span:hover {
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
+  .apresentacao2 {
+    padding: 1em 1em 0 1em;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 2000px) {
+  .apresentacao2 {
+    padding: 4em 1em 0 1em;
+  }
 }

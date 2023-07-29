@@ -159,19 +159,21 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="apresentacao2">
-                  <div class="card-text">
-                    Com habilidades sólidas em desenvolvimento web, crio páginas
-                    estruturadas e acessíveis em HTML, estilizo-as com CSS para
-                    uma aparência moderna e responsiva em diferentes
-                    dispositivos, e adiciono interatividade com JavaScript para
-                    recursos dinâmicos e atraentes. Também estou familiarizado
-                    com o ambiente Node.js, permitindo-me criar aplicações web
-                    robustas e escaláveis. Utilizando o framework Vue.js,
-                    desenvolvo interfaces de usuário interativas e reativas,
-                    proporcionando uma experiência suave e eficiente. A
-                    combinação de Node.js e Vue.js possibilita criar aplicações
-                    web modernas, de alto desempenho e com uma experiência de
-                    usuário excepcional.
+                  <div class="card-text d-flex justify-content-center">
+                    <p class="">
+                      Com habilidades sólidas em desenvolvimento web, crio
+                      páginas estruturadas e acessíveis em HTML, estilizo-as com
+                      CSS para uma aparência moderna e responsiva em diferentes
+                      dispositivos, e adiciono interatividade com JavaScript
+                      para recursos dinâmicos e atraentes. Também estou
+                      familiarizado com o ambiente Node.js, permitindo-me criar
+                      aplicações web robustas e escaláveis. Utilizando o
+                      framework Vue.js, desenvolvo interfaces de usuário
+                      interativas e reativas, proporcionando uma experiência
+                      suave e eficiente. A combinação de Node.js e Vue.js
+                      possibilita criar aplicações web modernas, de alto
+                      desempenho e com uma experiência de usuário excepcional.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -262,13 +264,67 @@
         <div class="projetos">
           <div class="container" style="height: 100%">
             <div class="row justify-content-center">
-              <div class="bloco col-md-3" onclick="redirecionar()">a</div>
-              <div class="bloco col-md-3"></div>
+              <div
+                id="0"
+                class="col-md-3 bloco2"
+                style="
+                  cursor: pointer;
+                  background-image: url(/img/Capturar.PNG);
+                "
+                onclick="redirecionar()"
+              >
+                <div
+                  class="d-flex justify-content-center align-content-end mt-5"
+                  style="background-color: #1d7954"
+                >
+                  <p>EM DESENVOLVIMENTO</p>
+                </div>
+              </div>
+              <div
+                id="1"
+                class="col-md-3 bloco2"
+                style="
+                  cursor: pointer;
+                  background-image: url(/img/Capturar2.PNG);
+                "
+                onclick="redirecionar()"
+              >
+                <div
+                  class="d-flex justify-content-center align-content-end mt-5"
+                  style="background-color: #1d7954"
+                >
+                  <p>Chalenge Frontend Mentor</p>
+                </div>
+              </div>
 
-              <div class="bloco col-md-3"></div>
-              <div class="bloco col-md-3"></div>
+              <div
+                id="2"
+                class="col-md-3 bloco2"
+                style="cursor: pointer; background-image: url(/img/nePesc.PNG)"
+                onclick="redirecionar()"
+              >
+                <div
+                  class="d-flex justify-content-center align-content-end mt-5"
+                  style="background-color: #1d7954"
+                >
+                  <p>EM DEPLOY</p>
+                </div>
+              </div>
+
+              <div
+                id="3"
+                class="col-md-3 bloco2"
+                style="cursor: pointer"
+                onclick="redirecionar()"
+              >
+                <div
+                  class="d-flex justify-content-center align-content-end mt-5"
+                  style="background-color: #1d7954"
+                >
+                  <p>EM DESENVOLVIMENTO</p>
+                </div>
+              </div>
             </div>
-            <h1><a href="">mais...</a></h1>
           </div>
         </div>
       </section>
@@ -284,33 +340,6 @@
     </section>
     <script type="text/javascript" src="/js/app.js" defer></script>
   </body>
-
-  <script>
-    var marginTop = 0; // variável para armazenar o estado atual
-
-    function changeMargin() {
-      if (marginTop == 0) {
-        document.getElementById("container").style.marginTop = "5em";
-        marginTop = 10; // atualiza o valor da variável
-      } else {
-        document.getElementById("container").style.marginTop = "3em";
-        marginTop = 0; // atualiza o valor da variável
-      }
-    }
-
-    function typeWriter(elemento) {
-      const textoArray = elemento.innerHTML.split(""); //o split divide em um array
-      elemento.innerHTML = ""; //serve para limpar para que a animacao ocorra
-      textoArray.forEach((letra, i) => {
-        setTimeout(function () {
-          elemento.innerHTML += letra; //para cada letra add uma + outra
-        }, 100 * i); //tempo para adicionar algo setTimeout(funcao, tempo)
-      });
-    }
-
-    const titulo = document.querySelector(".sou");
-    typeWriter(titulo);
-  </script>
 
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
